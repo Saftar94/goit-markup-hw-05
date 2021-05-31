@@ -184,7 +184,7 @@ img{
     margin-right: 10px;
 }
 .links .contacts{
-       fill: var(--text-colorgre);
+    fill: var(--text-colorgre);
  
 }
 
@@ -192,14 +192,15 @@ img{
     display: flex;
     align-items: center;
     color: var(--text-colorgre);
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .contact .link:hover,
 .contact .link:focus {
     color: var(--hover-colorblu);
     fill: var(--hover-colorblu);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 
 
 }
@@ -338,17 +339,6 @@ padding: 10px 32px;
     
 }
 
-.iconclose{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-
-}
 
 
 /* особености */
@@ -458,19 +448,19 @@ padding: 10px 32px;
     text-transform: uppercase;
 
     overflow: auto;
-
+/* 
     transform: translateY(100%);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition-duration: 250ms; */
 
 }
 
 
-.wedoing-body:hover .wedoin-info,
+/* .wedoing-body:hover .wedoin-info,
 .wedoing-body:focus .wedoin-info{
     transform: translateY(0%);
     
-}
+} */
 
 
 
@@ -588,7 +578,6 @@ padding: 10px 32px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top:calc(-1 * 50px);
     margin-left: calc(-1 * var(--marg-cart));
 }
 .client-body .client-title{
@@ -598,7 +587,6 @@ padding: 10px 32px;
     justify-content: center;
     align-items: center;
     flex-basis: calc(100%/6 - var(--marg-cart));
-    margin-top: 50px;
     margin-left: var(--marg-cart);
 
     border-radius: 4%;
@@ -614,6 +602,7 @@ padding: 10px 32px;
     height: 100%;
     fill: var(--icon-colo);
     border: 1px solid var(--icon-colo);
+    border-radius: 4px;
 
 }
 
