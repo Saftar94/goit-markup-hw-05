@@ -159,6 +159,8 @@ img{
 
 .headlink .link{
     color: var(--text-colorbl);
+
+    transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
@@ -193,6 +195,7 @@ img{
     align-items: center;
     color: var(--text-colorgre);
 
+    transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
@@ -258,6 +261,7 @@ border: 0;
 
 padding: 10px 32px;
 
+transition-property: background-color, color ;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
 }
@@ -434,8 +438,6 @@ transition-duration: 250ms;
     align-items: center;    
     background-color:
     rgba(47, 48, 58, 0.8);
-    ;
-    /* padding: 27px 0; */
     color: white;
     left: 0;
     bottom: 0;
@@ -488,6 +490,8 @@ transition-duration: 250ms;
     height: 44px;
     border-radius: 50%;
 
+    transition-property: background-color;
+
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
@@ -505,6 +509,11 @@ transition-duration: 250ms;
     width: 20px;
     height: 20px;
     fill: var(--icon-colo);
+
+    transition-property: fill;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .iconteamtitle .iconteambody:hover .iconsvg,
@@ -611,19 +620,17 @@ transition-duration: 250ms;
     border: 1px solid var(--icon-colo);
     border-radius: 4px;
 
+    transition-property: fill,  border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 
 }
 
-
-
-
 .iconcli:hover,
 .iconcli:focus{
 
-    fill:var(--hover-colorblu);
-    border-color:var(--hover-colorblu);
+    fill: var(--hover-colorblu);
+    border-color: var(--hover-colorblu);
 
 }
 
@@ -702,6 +709,7 @@ margin-right: 70px;
     background-color: #ffffff1a;
     border-radius: 50%;
 
+    transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 
@@ -754,6 +762,7 @@ background-color: var(--port-hedrgr);
 padding: 6px 22px;
 border: 0;
 
+transition-property:  background-color, color, box-shadow;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
 }
@@ -787,6 +796,11 @@ transition-duration: 250ms;
     margin-left: var(--marg-cart);
     cursor: pointer;
     border: 1px solid #EEEEEE;
+
+    transition-property:  box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
  }
 
  .portfotitle .portolink{
@@ -855,9 +869,9 @@ padding: 20px 24px;
 
     transform: translateY(100%);
 
-
+    transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 950ms;
+    transition-duration: 550ms;
 
 }
 
